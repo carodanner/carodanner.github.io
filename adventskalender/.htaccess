@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Geschützter Bereich"
-AuthUserFile https://carodanner.github.io/ .htpasswd
+AuthUserFile https://carodanner.github.io/.htpasswds
 require valid-user

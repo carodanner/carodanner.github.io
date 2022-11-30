@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>17 Echo Gesamt</title>
+        <script>
+          function soundClicked(soundIdClicked) {
+            var allAudioElements = document.getElementsByTagName('audio');
+            for (var i=0; i<allAudioElements.length; i++) {
+              var audioElement = allAudioElements[i];
+              if (audioElement.id === soundIdClicked) {
+                // clicked sound
+                if (audioElement.paused) {
+                  // start sound playing
+                  audioElement.play();
+                } else {
+                  // stop sound, if already playing
+                  stopAudio(audioElement);
+                }
+              } else {
+                // stop other sound already playing
+                stopAudio(audioElement);
+              }
+            }
+          } 
+
+          function stopAudio(audioElement) {
+            audioElement.pause();
+            audioElement.currentTime = 0;
+          }
+        </script>
+    </head>
+  <body>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 427" style="max-width: 20cm">
+  <image width="640" height="427" xlink:href="/path/to/image"></image> <a xlink:href="#1">
+    <rect x="494" y="11" fill="#fff" opacity="0" width="57" height="55" onclick="javascript:soundClicked('sound1')"></rect>
+  </a><a xlink:href="#2">
+    <rect x="557" y="245" fill="#fff" opacity="0" width="55" height="51" onclick="javascript:soundClicked('sound2')"></rect>
+  </a><a xlink:href="#3">
+    <rect x="175" y="96" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound3')"></rect>
+  </a><a xlink:href="#4">
+    <rect x="86" y="350" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound4')"></rect>
+  </a><a xlink:href="#5">
+    <rect x="413" y="322" fill="#fff" opacity="0" width="51" height="50" onclick="javascript:soundClicked('sound5')"></rect>
+  </a><a xlink:href="#6">
+    <rect x="18" y="17" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound6')"></rect>
+  </a><a xlink:href="#7">
+    <rect x="43" y="241" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound7')"></rect>
+  </a><a xlink:href="#8">
+    <rect x="461" y="210" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound8')"></rect>
+  </a><a xlink:href="#9">
+    <rect x="214" y="293" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound9')"></rect>
+  </a><a xlink:href="#10">
+    <rect x="67" y="85" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound10')"></rect>
+  </a><a xlink:href="#11">
+    <rect x="324" y="204" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound11')"></rect>
+  </a><a xlink:href="#12">
+    <rect x="20" y="331" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound12')"></rect>
+  </a><a xlink:href="#13">
+    <rect x="574" y="331" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound13')"></rect>
+  </a><a xlink:href="#14">
+    <rect x="279" y="118" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound14')"></rect>
+  </a><a xlink:href="#15">
+    <rect x="126" y="271" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound15')"></rect>
+  </a><a xlink:href="#16">
+    <rect x="255" y="28" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound16')"></rect>
+  </a><a xlink:href="#17">
+    <rect x="558" y="60" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound17')"></rect>
+  </a><a xlink:href="#18">
+    <rect x="136" y="174" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound18')"></rect>
+  </a><a xlink:href="#19">
+    <rect x="283" y="357" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound19')"></rect>
+  </a><a xlink:href="#20">
+    <rect x="125" y="14" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound20')"></rect>
+  </a><a xlink:href="#21">
+    <rect x="530" y="143" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('soun21')"></rect>
+  </a><a xlink:href="#22">
+    <rect x="18" y="154" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound22')"></rect>
+  </a><a xlink:href="#23">
+    <rect x="223" y="198" fill="#fff" opacity="0" width="50" height="50" onclick="javascript:soundClicked('sound23')"></rect>
+  </a><a xlink:href="#24">
+    <rect x="366" y="61" fill="#fff" opacity="0" width="92" height="91" onclick="javascript:soundClicked('sound24')"></rect>
+  </a>
+</svg>
+    <audio id="sound1"><source src="Echo-Text.mp3" type="audio/mpeg"></audio>
+    <audio id="sound2"><source src="Echo-Musik-ganz.mp3" type="audio/mpeg"></audio>
+    <audio id="sound3"><source src="Echo-Hahn.mp3 " type="audio/mpeg"></audio>
+    <audio id="sound4"><source src="Wegweiser-Titel.mp3" type="audio/mpeg"></audio>
+    <audio id="sound5"><source src="Echo-Tipp-1.mp3" type="audio/mpeg"></audio>
+    <audio id="sound6"><source src="Echo-Tipp-2.mp3" type="audio/mpeg"></audio>
+    <audio id="sound7"><source src="Echo-Stern.mp3" type="audio/mpeg"></audio>
+  </body>
+</html>

@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Protected Site"
-AuthUserFile https://carodanner.github.io/.htpasswd
+AuthUserFile https://carodanner.github.io/ .htpasswd
 require valid-user

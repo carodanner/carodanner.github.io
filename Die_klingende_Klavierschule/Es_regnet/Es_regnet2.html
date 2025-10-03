@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drei Toene Gesamt </title>
+        <script>
+          function soundClicked(soundIdClicked) {
+            var allAudioElements = document.getElementsByTagName('audio');
+            for (var i=0; i<allAudioElements.length; i++) {
+              var audioElement = allAudioElements[i];
+              if (audioElement.id === soundIdClicked) {
+                // clicked sound
+                if (audioElement.paused) {
+                  // start sound playing
+                  audioElement.play();
+                } else {
+                  // stop sound, if already playing
+                  stopAudio(audioElement);
+                }
+              } else {
+                // stop other sound already playing
+                stopAudio(audioElement);
+              }
+            }
+          } 
+
+          function stopAudio(audioElement) {
+            audioElement.pause();
+            audioElement.currentTime = 0;
+          }
+        </script>
+    </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2460 1604" style="max-width: 20cm">
+  <image width="2460" height="1604" xlink:href="Es_regnet2.jpg"></image> <a xlink:href="#2">
+    <rect x="219" y="397" fill="#fff" opacity="0" width="94" height="75" onclick="javascript:soundClicked('sound1')"></rect>//Hier fehlt noch der Link
+  </a><a xlink:href="#">
+    <rect x="1749" y="37" fill="#fff" opacity="0" width="368" height="211" onclick="javascript:soundClicked('sound1')"></rect>
+  </a><a xlink:href="#3">
+    <rect x="638" y="317" fill="#fff" opacity="0" width="100" height="100" onclick="javascript:soundClicked('sound2')"></rect>
+  </a><a xlink:href="#4">
+    <rect x="785" y="329" fill="#fff" opacity="0" width="76" height="80" onclick="javascript:soundClicked('sound3')"></rect>
+  </a><a xlink:href="#5">
+    <rect x="1029" y="326" fill="#fff" opacity="0" width="100" height="100" onclick="javascript:soundClicked('sound4')"></rect>
+  </a><a xlink:href="#6">
+    <rect x="1184" y="342" fill="#fff" opacity="0" width="62" height="80" onclick="javascript:soundClicked('sound5')"></rect>
+  </a><a xlink:href="#7">
+    <rect x="1293" y="339" fill="#fff" opacity="0" width="75" height="75" onclick="javascript:soundClicked('sound6')"></rect>
+  </a><a xlink:href="#8">
+    <rect x="1416" y="317" fill="#fff" opacity="0" width="100" height="100" onclick="javascript:soundClicked('sound7')"></rect>
+  </a><a xlink:href="#9">
+    <rect x="1570" y="342" fill="#fff" opacity="0" width="85" height="96" onclick="javascript:soundClicked('sound8')"></rect>
+  </a><a xlink:href="#10">
+    <rect x="1685" y="340" fill="#fff" opacity="0" width="76" height="80" onclick="javascript:soundClicked('sound9')"></rect>
+  </a><a xlink:href="#11">
+    <rect x="1882" y="322" fill="#fff" opacity="0" width="100" height="100" onclick="javascript:soundClicked('sound10')"></rect>
+  </a><a xlink:href="#12">
+    <rect x="698" y="464" fill="#fff" opacity="0" width="58" height="81" onclick="javascript:soundClicked('sound11')"></rect>
+  </a><a xlink:href="#13">
+    <rect x="878" y="437" fill="#fff" opacity="0" width="100" height="100" onclick="javascript:soundClicked('sound12')"></rect>
+  </a><a xlink:href="#14">
+    <rect x="1097" y="466" fill="#fff" opacity="0" width="52" height="73" onclick="javascript:soundClicked('sound13')"></rect>
+  </a><a xlink:href="#15">
+    <rect x="1268" y="453" fill="#fff" opacity="0" width="100" height="100" onclick="javascript:soundClicked('sound14')"></rect>
+  </a><a xlink:href="#15">
+    <rect x="1487" y="463" fill="#fff" opacity="0" width="75" height="71" onclick="javascript:soundClicked('sound15')"></rect>
+  </a><a xlink:href="#16">
+    <rect x="1885" y="462" fill="#fff" opacity="0" width="62" height="82" onclick="javascript:soundClicked('sound16')"></rect>
+  </a><a xlink:href="#17">
+    <rect x="572" y="1315" fill="#fff" opacity="0" width="131" height="171" onclick="javascript:soundClicked('sound17')"></rect>
+  </a><a xlink:href="#18">
+    <rect x="749" y="1312" fill="#fff" opacity="0" width="133" height="175" onclick="javascript:soundClicked('sound18')"></rect>
+  </a><a xlink:href="#19">
+    <rect x="931" y="1308" fill="#fff" opacity="0" width="136" height="165" onclick="javascript:soundClicked('sound19')"></rect>
+  </a><a xlink:href="#20">
+    <rect x="1445" y="1055" fill="#fff" opacity="0" width="563" height="454" onclick="javascript:soundClicked('sound20')"></rect>
+  </a>
+</svg>
+   
+    <audio id="sound1"><source src="Es_regnet_Klavier_gesamt.mp3" type="audio/mpeg"></audio>
+    <audio id="sound2"><source src="Es_regnet_re_Terz1.mp3" type="audio/mpeg"></audio>                                                                               
+    <audio id="sound3"><source src="Es_regnet_re_EG.mp3" type="audio/mpeg"></audio>    
+     <audio id="sound4"><source src="Es_regnet_re_Terz1.mp3.mp3" type="audio/mpeg"></audio>
+    <audio id="sound5"><source src="Es_regnet_re_EG.mp3" type="audio/mpeg"></audio> 
+    <audio id="sound6"><source src="Es_regnet_re_GF.mp3" type="audio/mpeg"></audio>   
+    <audio id="sound7"><source src="Es_regnet_re_FE.mp3" type="audio/mpeg"></audio>   
+    <audio id="sound8"><source src="Es_regnet_re_ED.mp3" type="audio/mpeg"></audio>   
+    <audio id="sound9"><source src="Es_regnet_re_DE.mp3" type="audio/mpeg"></audio>   
+    <audio id="sound10"><source src="Es_regnet_li_HC.mp3" type="audio/mpeg"></audio>  
+    <audio id="sound11"><source src="Es_regnet_li_CH.mp3" type="audio/mpeg"></audio>  
+    <audio id="sound12"><source src="Es_regnet_li_HC.mp3" type="audio/mpeg"></audio> 
+    <audio id="sound13"><source src="Es_regnet_li_CA.mp3" type="audio/mpeg"></audio>  
+    <audio id="sound14"><source src="Es_regnet_li_AH.mp3" type="audio/mpeg"></audio> 
+    <audio id="sound15"><source src="Es_regnet_li_HC.mp3" type="audio/mpeg"></audio>  
+    <audio id="sound17"><source src="Es_regnet2_Info1.mp3" type="audio/mpeg"></audio>  // Hier fehlt der zweite Klick
+    <audio id="sound18"><source src="Es_regnet2_Raestel.mp3" type="audio/mpeg"></audio>  
+    <audio id="sound19"><source src="Es_regnet2_Spielstart.mp3" type="audio/mpeg"></audio>  
+    <audio id="sound20"><source src="Es_regnet2_Esel.mp3" type="audio/mpeg"></audio>  
+  </body>
+</html>

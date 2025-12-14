@@ -20,3 +20,22 @@
                 // stop other sound already playing
                 stopAudio(audioElement);
               }
+            }
+          } 
+
+          function stopAudio(audioElement) {
+            audioElement.pause();
+            audioElement.currentTime = 0;
+          }
+        </script>
+    </head>
+  <body>
+    <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 893 500 " style="max-width: 20cm">
+  <image width="893" height="500" xlink:href="Aaronssong.jpg"></image>  
+      <a xlink:href="#0">
+        <rect x="633" y="542" fill="#fff" opacity="0" width="758" height="276"  onclick="javascript:soundClicked('sound0')"></rect>
+          //Starttext
+      </a>
+    </svg>
+    <audio id="sound0"><source src="Aaronssong.mp3"  type="audio/mpeg"> Your browser does not support the audio element. </audio>
+</html>
